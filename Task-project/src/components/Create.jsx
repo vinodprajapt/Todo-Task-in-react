@@ -14,7 +14,7 @@ const Create = ({ tasks, setTasks }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (task.name.length < 3) return toast.error("A task must have more than 3 characters");
+    if (task.name.length < 5) return toast.error("A task must have more than 5 characters");
      
     if (task.name.length > 100) return toast.error("A task must not be more than 100 characters");
 
