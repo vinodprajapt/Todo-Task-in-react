@@ -81,7 +81,7 @@ function Section({ status, tasks, setTasks, todos, todo, inprogress, closed }) {
         return t;
       });
       localStorage.setItem("tasks", JSON.stringify(mTasks));
-      toast("Task status changed");
+      toast("✈️Task status changed ✈️");
 
       return mTasks;
     });
@@ -127,7 +127,7 @@ function Task({ task, tasks, setTasks }) {
     localStorage.setItem("tasks", JSON.stringify(fTasks));
     setTasks(fTasks);
 
-    toast("Task Removed");
+    toast("🌚Task Removed 🌚");
   };
 
   return (
